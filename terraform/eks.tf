@@ -37,11 +37,11 @@ module "eks" {
       instance_types = ["t3.small"]
 
       # Quantidade mínima de servidores EC2 mantidos ativos pelo Auto Scaling
-      min_size = 1
+      min_size = 0
       # Quantidade máxima de servidores EC2 permitidos em caso de aumento de carga
       max_size = 3
       # Quantidade desejada de servidores em operação normal
-      desired_size = 1
+      desired_size = 0
 
       # Tipo de compra da capacidade: Instâncias sob demanda com garantia de disponibilidade
       capacity_type = "ON_DEMAND"
